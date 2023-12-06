@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --color-body: #FAF0E6;
+    --color-heading: #fae9d7;
+    --color-base: #5C5470;
+    --color-base2: #352F44;
+    --color-brand: #B9B4C7;
+    --color-brand2: #a091c9;
+    --sidebar-width: 240px;
+    --font-base: "Space Mono"
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-heading);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+.navbar {
+    background: var(--color-base);
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-body);
+}
+
+.custom-link {
+    font-weight: 700;
+    position: relative;
+}
+
+.custom-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.custom-link:hover::after {
+    width: 100%;
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: 0 0 0 4px var(--color-body);
+}
+
+.project-card .project-card-image {
+    overflow: hidden;
+}
+
+.project-card .project-card-image img {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover .project-card-image img {
+    transform: scale(1.1);
+}
